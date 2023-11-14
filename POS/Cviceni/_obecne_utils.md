@@ -28,8 +28,8 @@
 
 ## Jak nastavit domovsky adresar pro kazdeho uzivatele
 ### 1. Sdileni
-**Share name**: <nazev_slozky>**$**__
-Nastavit opravneni pro **Authenticated Users**, aby mohli psat a cist. A odstranit **Everyone**, ulozit  cesku \\<nazev_pc>\<nazev_slozky>__
+**Share name**: <nazev_slozky>**$**<br />
+Nastavit opravneni pro **Authenticated Users**, aby mohli psat a cist. A odstranit **Everyone**, ulozit  cesku \\<nazev_pc>\<nazev_slozky><br />
 V security jit do **advanced security settings**. Disable inheritance a smazat **Users (Read and Execute)**.
 
 V SRV22-DC nastavit v users zalozce **Profile** home folder a nezapomenout na cestu ke slozce a za ni **\%username%**. 
