@@ -26,8 +26,8 @@
 ## Commands
 **gpupdate /force** - resetovani policies
 
-##Jak nastavit domovsky adresar pro kazdeho uzivatele
-###1. Sdileni
+## Jak nastavit domovsky adresar pro kazdeho uzivatele
+### 1. Sdileni
 **Share name**: <nazev_slozky>**$**__
 Nastavit opravneni pro **Authenticated Users**, aby mohli psat a cist. A odstranit **Everyone**, ulozit  cesku \\<nazev_pc>\<nazev_slozky>__
 V security jit do **advanced security settings**. Disable inheritance a smazat **Users (Read and Execute)**.
