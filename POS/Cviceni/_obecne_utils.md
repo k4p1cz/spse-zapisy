@@ -3,7 +3,7 @@
 \\hp82\win_srv
 
 ## IP Adresy
-*Muzou byt nastaveny podle potreby*
+*Muzou byt nastaveny podle potreby*\n
 **SRV22-DC: 172.16.0.1**
 **Win81**: 172.16.0.2
 **Win19**: 172.16.0.3
