@@ -8,6 +8,7 @@
 - **Win81**: 172.16.0.2
 - **Win19**: 172.16.0.3
 - **Win11**: 172.16.0.4
+- **SRV-22**: 172.16.0.5
 
 ### Jak nastavovat IP?
 - **Adress**: *IP Stroje - viz prehled vyse*
