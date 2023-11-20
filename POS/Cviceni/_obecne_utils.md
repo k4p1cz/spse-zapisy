@@ -70,9 +70,10 @@
 ### 2. SRV22 nastaveni / nastaveni slozky v Profiles
 - Prihlasime se za nove vytvoreneho roaming uzivatele, aby se nam v Profiles vytvorila slozka tohoto uzivatele
 - Potrebujeme pristoupit do uzivatelske slozky vytvorene automaticky - napr. "b3.V2"
-  - Nastavime Administratora jakozto ownera teto slozky, abychom do ni mohli pristoupit
+  - Nastavime Administratora jakozto **ownera teto slozky**, abychom do ni mohli pristoupit
       - Zaskrtneme, aby se Administrator nastavil jako owner vsech podslozek a souboru
-  - Nastavime userovi 3 permise - read, read & execute, list
+  - Nastavime userovi **3 permise** - read, read & execute, list
       - Refreshneme permise v advanced 
-- Otevreme soubor ntuser, ktery je hidden soubor, cili musime zobrazit i hidden soubory
-- 
+- Otevreme soubor NTUSER.DAT, ktery je hidden soubor, cili musime **zobrazit i hidden soubory** a prejit do options -> view -> odskrtneme hide protected files
+- Prejmenujeme tento soubor na NTUSER.MAN
+- Otestujeme toto nastaveni prihlasenim se za uzivatele
