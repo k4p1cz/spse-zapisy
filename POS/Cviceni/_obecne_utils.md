@@ -20,6 +20,9 @@
 ## Commands
 **gpupdate /force** - resetovani policies
 
+## Overeni typu uctu uzivatele
+WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
+
 ## Jak nastavit domovsky adresar pro kazdeho uzivatele
 ### 1. Sdileni
 - **Share name**: <nazev_slozky>**$**
@@ -76,4 +79,4 @@
       - Refreshneme permise v advanced 
 - Otevreme soubor NTUSER.DAT, ktery je hidden soubor, cili musime **zobrazit i hidden soubory** a prejit do options -> view -> odskrtneme hide protected files
 - Prejmenujeme tento soubor na NTUSER.MAN
-- Otestujeme toto nastaveni prihlasenim se za uzivatele
+- Otestujeme toto nastaveni prihlasenim se za uzivatele - 
