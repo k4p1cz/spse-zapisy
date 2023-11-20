@@ -73,10 +73,10 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 ### 2. SRV22 nastaveni / nastaveni slozky v Profiles
 - Prihlasime se za nove vytvoreneho roaming uzivatele, aby se nam v Profiles vytvorila slozka tohoto uzivatele
 - Potrebujeme pristoupit do uzivatelske slozky vytvorene automaticky - napr. "b3.V2"
-  - Nastavime Administratora jakozto **ownera teto slozky**, abychom do ni mohli pristoupit
+  - Nastavime skupinu Administrators jakozto **ownera teto slozky**, abychom do ni mohli pristoupit
       - Zaskrtneme, aby se Administrator nastavil jako owner vsech podslozek a souboru
   - Nastavime userovi **3 permise** - read, read & execute, list
       - Refreshneme permise v advanced 
 - Otevreme soubor NTUSER.DAT, ktery je hidden soubor, cili musime **zobrazit i hidden soubory** a prejit do options -> view -> odskrtneme hide protected files
 - Prejmenujeme tento soubor na NTUSER.MAN
-- Otestujeme toto nastaveni prihlasenim se za uzivatele - 
+- Otestujeme toto nastaveni prihlasenim se za uzivatele
