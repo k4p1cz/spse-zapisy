@@ -41,7 +41,7 @@
 - Otevrit si **Account** zalozku a nasledne **Log On To...* 
 - Nastavime pocitac a ulozime :)
 
-## Jak nastavit ukladani profilu
+## Jak nastavit ukladani profilu / Jak vytvorit roaming uzivatele
 ### 1. Vytvoreni slozky
 - Vytvorime slozku **Profiles** na Srv19 stejne, jako jsme to udelali u domovskeho adresare. 
 - Nastavime permise stejne jako u domovskeho adresare. 
@@ -61,3 +61,18 @@
 ### 3. Upraveni slozky s userama
 - Oznacime vsechny usery a otevreme properties
 - Prejdeme do karty **Profile** a do logon scripts napiseme nazev naseho scriptu
+
+## Jak vytvorit mandatory uzivatele
+### 1. Vytvorit roaming uzivatele
+- Vytvorime roaming uzivatele
+- Nebo skopirujeme roaming uzivatele
+- Musime mit funkcni profiles slozku
+### 2. SRV22 nastaveni / nastaveni slozky v Profiles
+- Prihlasime se za nove vytvoreneho roaming uzivatele, aby se nam v Profiles vytvorila slozka tohoto uzivatele
+- Potrebujeme pristoupit do uzivatelske slozky vytvorene automaticky - napr. "b3.V2"
+  - Nastavime Administratora jakozto ownera teto slozky, abychom do ni mohli pristoupit
+      - Zaskrtneme, aby se Administrator nastavil jako owner vsech podslozek a souboru
+  - Nastavime userovi 3 permise - read, read & execute, list
+      - Refreshneme permise v advanced 
+- Otevreme soubor ntuser, ktery je hidden soubor, cili musime zobrazit i hidden soubory
+- 
