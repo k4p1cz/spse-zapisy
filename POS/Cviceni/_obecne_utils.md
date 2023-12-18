@@ -1,16 +1,3 @@
-# OBSAH
-#### [IP Adresy](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#ip-adresy-1)
-#### [Jak nastavit IP](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavovat-ip)
-#### [Commands](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#commands-1)
-#### [Zmirneni naroku na heslo](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#zmirneni-naroku-na-heslo-1)
-#### [Overeni typu uctu uzivatele](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#overeni-typu-uctu-uzivatele-1)
-#### [Jak nastavit domovsky adresar pro kazdeho uzivatele](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-domovsky-adresar-pro-kazdeho-uzivatele-1)
-#### [Jak nastavit spolecny adresar (sklad)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-spolecny-adresar-sklad-1)
-#### [Jak vytvorit mandatory uzivatele](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-mandatory-uzivatele-1)
-#### [Jak vytvorit skupinu a pridat do ni uzivatele](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-skupinu-a-pridat-do-ni-uzivatele-1)
-#### [Jak vytvorit skupinovy mandatory profil](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-skupinu-a-pridat-do-ni-uzivatele-1)
-
-
 ## Windows iso
 *Zde najdeme vsechny  iso soubory, pokud nejsou zahrnuty v nasi win_srv slozce*<br />
 \\hp82\win_srv
