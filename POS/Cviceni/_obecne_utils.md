@@ -120,3 +120,14 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Prihlasime se 
 - **Nemelo** by se nam ukazat "Hi"
 - Plocha a data by mely vypadat stejne a po [overeni typu uctu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#overeni-typu-uctu-uzivatele)
+
+## Jak omezit velikost sitove slozky Sklad a Home
+> Hard quota: nelze prekrocit | Soft quota: lze prekrocit - je zaslano upozorneni administratorovi domeny
+### 1. Srv22
+- Najdeme si Server manager - otevreme ho a klikneme na **"Add roles and features"**
+- Klikneme 2x next, nez se dostaneme k **"Server roles"**
+- Vybereme **"File and Storage Services/File and iSCSI Services/File Server Resource Manager"**
+- Nainstalujeme
+- Prejdeme do **"Tools/File Server Resource Manager"**
+- Prejdeme do **"Quotas"** - muzeme vytvorit quotu
+> Poznamka: zapis bude dokoncen priste
