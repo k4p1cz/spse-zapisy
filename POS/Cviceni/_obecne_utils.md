@@ -81,4 +81,32 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Prejmenujeme tento soubor na NTUSER.MAN
 - Otestujeme toto nastaveni prihlasenim se za uzivatele
 
-## Jak vytvorit logy prihlaseni
+## Jak vytvorit skupinu a pridat do ni uzivatele
+### 1. Vytvorit skupinu
+- New -> Group - nastavit nazev skupiny - zbytek nastavovat nemusime
+### 2. Pridat uzivatele do groupy
+- Poklikat na uzivatele -> Member Of -> Add -> "Nazev skupiny" -> OK
+
+## Jak vytvorit skupinovy mandatorni profil
+- Vytvorime skupinu podle [tohoto](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-skupinu-a-pridat-do-ni-uzivatele) navodu a defaultniho uzivatele, ktereho do teto skupiny pridam
+### 1. Zkopiruju si "Default Profile" do "\\Srv22\Profiles$\" 
+- Prihlasim se na klientsky stroj a dam **WIN+PAUSE** -> **Advanced system settings** a prejdu do nastaveni "User profiles"
+- Najdu si default profile a dam **Copy To** 
+- Copy profile to musi byt nastaveno na nasdilenou slozku na Srv22 - v nasem pripade je to slozka **Profiles** (\\Srv22\Profiles$\<nazev_slozky>)
+- nazev_slozky si nastavim podle skupiny a verze Windowsu (pro WIN11 -> **<nazev_slozky>.V6**
+- Permise si nastavim na groupu, kterou jsme vytvorili v predchozim kroku - pokud ji nemuzeme najit, zmenime si **Object types** na **Group**
+- Zkontrolujeme si, ze se do tohoto adresare muzeme podivat 
+### 2. Nastaveni Srv22-DC
+- Prejdu do nastaveni usera, pro ktereho toto chci nastavit
+- Jdu do karty "Profiles" a do profile path zadavam - **\\Srv22\<nazev_slozky>$\<nazev_defaultniho_profilu>** - Nazev defaultniho profilu musi byt bez koncovky .V<x>
+### 3. Nastaveni defaultniho profilu
+- Prihlasim se pod defaultnim profilem a nastavim si UI a obsah tohoto profilu
+- **NESMIM ZAPOMENOUT SE ODHLASIT!**
+### 4. Srv22
+- Najdu si slozku Defaultniho profilu a upravim tento profil na mandatory - viz. nastaveni mandatory uctu
+- Odstranim "Write" permisi pro slozku Defaultniho profilu a nastavim toto pro vsechny podslozky
+### 5. Otestuju
+- Vytvorim si koncoveho uzivatele kopirovanim Defaultniho mandatorniho uzivatele, ktereho jsme vytvorili
+- Prihlasime se 
+- **Nemelo** by se nam ukazat "Hi"
+- Plocha a data by mely vypadat stejne a po [overeni typu uctu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#overeni-typu-uctu-uzivatele)
