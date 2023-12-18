@@ -5,10 +5,10 @@
 ## IP Adresy
 *Muzou byt nastaveny podle potreby*
 - **SRV22-DC: 172.16.0.1**
-- **Win81**: 172.16.0.2
-- **Win19**: 172.16.0.3
-- **Win11**: 172.16.0.4
-- **SRV-22**: 172.16.0.5
+- **SRV-22**: 172.16.0.2
+- **Win81**: 172.16.0.3
+- **Win19**: 172.16.0.4
+- **Win11**: 172.16.0.5
 
 ### Jak nastavovat IP?
 - **Adress**: *IP Stroje - viz prehled vyse*
@@ -80,3 +80,5 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Otevreme soubor NTUSER.DAT, ktery je hidden soubor, cili musime **zobrazit i hidden soubory** a prejit do options -> view -> odskrtneme hide protected files
 - Prejmenujeme tento soubor na NTUSER.MAN
 - Otestujeme toto nastaveni prihlasenim se za uzivatele
+
+## Jak vytvorit logy prihlaseni
