@@ -2,15 +2,13 @@
 #### [IP Adresy](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#ip-adresy-1)
 #### [Jak nastavit IP](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavovat-ip)
 #### [Commands](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#commands-1)
+#### [Zmirneni naroku na heslo](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#zmireni-naroku-na-heslo-1)
 #### [Overeni typu uctu uzivatele](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#overeni-typu-uctu-uzivatele-1)
 #### [Jak nastavit domovsky adresar pro kazdeho uzivatele](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-domovsky-adresar-pro-kazdeho-uzivatele-1)
 #### [Jak nastavit spolecny adresar (sklad)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-spolecny-adresar-sklad-1)
 #### [Jak vytvorit mandatory uzivatele](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-mandatory-uzivatele-1)
 #### [Jak vytvorit skupinu a pridat do ni uzivatele](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-skupinu-a-pridat-do-ni-uzivatele-1)
 #### [Jak vytvorit skupinovy mandatory profil](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-skupinu-a-pridat-do-ni-uzivatele-1)
-
-
-
 
 
 ## Windows iso
@@ -34,6 +32,15 @@
 
 ## Commands
 **gpupdate /force** - resetovani policies
+
+## Zmirneni naroku na heslo
+- Na Srv22-DC si otevreme Server Manager a prejdeme do **Tools->Group Policy Management**
+- V levem menu si rozklikneme nas forrest -> domenu a rozklikneme si *Default Domain Policy** - pravym na to klikneme a dame **edit**
+- Najdeme si cestu - Policies/Windows Settings/Security Settings/Account Policies/Password Policy
+- Zmenime **"Minimum password length"** na **3**
+- Zmenime **"Password must meet complexity requeirements"** na **disabled**
+- Pomoci [commandu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#commands-1) na resetovani policies zadaneho do cmd.exe se hned projevi zmeny
+- Otestujeme a mame hotovo :)
 
 ## Overeni typu uctu uzivatele
 WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
