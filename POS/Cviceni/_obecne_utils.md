@@ -131,3 +131,9 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Prejdeme do **"Tools/File Server Resource Manager"**
 - Prejdeme do **"Quotas"** - muzeme vytvorit quotu
 > Poznamka: zapis bude dokoncen priste
+
+## Jak nastavit disk quotu
+- Na Srv22 si kliknu pravym na disk C: a dam "Properties"
+- Rozkliknu zalozku "Quota" a zapnu prvni 2 checkboxy
+- Dale kliknu na "Advanced settings"
+- Muzu nastavit quoty pro konkretni uzivatele
