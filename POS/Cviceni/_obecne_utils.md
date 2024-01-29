@@ -168,3 +168,11 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - "set this printer as the default printer" nemusi 100% fungovat - windows xd
 - **OKAY** a muzeme zavrit editor naseho objectu
 - Pouzijeme gpupdate /force pro obnoveni domenovych politik
+- **Vysledek: Kazdy novy i stavajici uzivatel, pokud splnuje kriteria nastaveni permissi T nyni bude mit tuto T v seznamu Tiskaren**
+### Jak nasimulovat koupeni 2. stejne tiskarny, aby pomohla nasi predchozi T
+- Vytvorime novou T (viz. nahore)
+#### Zmeny v nastaveni T
+- Nazev vybereme stejny, zvolime akorat priponu "Tiskarna Pro Vsechny **Urychleni**"
+- Vybereme "Use an existing printer driver on this computer"
+- Vypneme "Share this printer"
+- Klikneme na puvodni T -> Properties -> Ports - vybereme moznost "Enable printer pooling" a vybereme port s nasi pomocnou T
