@@ -125,7 +125,6 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 
 ## Jak omezit velikost sitove slozky Sklad a Home
 > Hard quota: nelze prekrocit | Soft quota: lze prekrocit - je zaslano upozorneni administratorovi domeny
-### 1. Srv22
 - Najdeme si Server manager - otevreme ho a klikneme na **"Add roles and features"**
 - Klikneme 2x next, nez se dostaneme k **"Server roles"**
 - Vybereme **"File and Storage Services/File and iSCSI Services/File Server Resource Manager"**
@@ -140,6 +139,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Dale kliknu na "Advanced settings"
 - Muzu nastavit quoty pro konkretni uzivatele
 
+
 ## Jak pripravit a pripojit virtualni tiskarny
 #### [SRV22 Nastaveni](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#srv22-nastaveni)
 #### [Jak nastavit uzivateli pristup k tiskarne](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-uzivateli-pristup-k-tiskarne)
@@ -147,6 +147,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 #### [Jak nasimulovat koupeni 2. stejne tiskarny, aby pomohla nasi predchozi tiskarne](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nasimulovat-koupeni-2-stejne-tiskarny-aby-pomohla-nasi-predchozi-t)
 #### [Jak nasimulovat tiskarnu, ktera bude uprednostnovat dane uzivatele/skupinu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nasimulovat-tiskarnu-ktera-bude-uprednostnovat-dane-uzivateleskupinu)
 #### [Jak nasimulovat tiskarnu, ktera je vyhrazena pro konkretni skupinu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nasimulovat-t-ktera-je-vyhrazena-pro-konkretni-skupinu)
+
 ### SRV22 nastaveni
 - Add roles and features a 3x next
 - Ve vyberu vyberu polozku "Print And Document Services" pak vsude next a install
@@ -161,9 +162,11 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Otevru si properties nasi nove tiskarny (dale jen "T")
 - Zelene kolecko u ikonky T znamena, ze je to defaultni tiskarna pro nas server
 - V karte "Serurity" muzeme rict, kdo s T muze pracovat a co s ni muze delat
+  
 ### Jak nastavit uzivateli pristup k tiskarne
 - Otevreme si "Devices and Printers" a muzeme se pokusit ji vyhledat, ale nic nam ji nenajde
 - Pokud chceme T najit hned - musime prejit na SRV22 do properties T, do karty sharing a zakliknout moznost "List..." - NEMUSI FUNGOVAT - zalezi na nahode xd
+
 ### Jak docilit, aby uzivatel nemusel rucne hledat tiskarnu, ale byla tam "by default"
 - Prejdeme na DC a prejdeme do "Group policy management"
 - Forest->Domains->dom22.local - pravym klikneme na dom22.local a dame "Create a GPO in this..." -> Nastavime nazev napr. "Tiskarna Pro Vsechny"
@@ -175,6 +178,8 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - **OKAY** a muzeme zavrit editor naseho objectu
 - Pouzijeme gpupdate /force pro obnoveni domenovych politik
 - **Vysledek: Kazdy novy i stavajici uzivatel, pokud splnuje kriteria nastaveni permissi T nyni bude mit tuto T v seznamu Tiskaren**
+
+  
 ### Jak nasimulovat koupeni 2. stejne tiskarny, aby pomohla nasi predchozi T
 - Vytvorime novou T (viz. nahore)
 #### Zmeny v nastaveni T
@@ -182,6 +187,8 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Vybereme "Use an existing printer driver on this computer"
 - Vypneme "Share this printer"
 - Klikneme na puvodni T -> Properties -> Ports - vybereme moznost "Enable printer pooling" a vybereme port s nasi pomocnou T
+
+
 ### Jak nasimulovat tiskarnu, ktera bude uprednostnovat dane uzivatele/skupinu
 - Vytvorime novou T (viz. nahore)
 #### Zmeny v nastaveni T
@@ -194,6 +201,8 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Pravym na T -> Properties -> Security
 - **Odstranime everyone**
 - **Vysledek:** Tiskarna dotiskne stavajici dokument a hned jako nasledujici bude tisknout dokument, ktery zadal Administrator
+
+
 ### Jak nasimulovat T, ktera je vyhrazena pro konkretni skupinu
 - Vytvorime skupinu na SRV22-DC (dale jen G)
 - Vytvorime si 2 ucty (d1, d2) - d2 zaradime do G
