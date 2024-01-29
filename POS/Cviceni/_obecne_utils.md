@@ -140,7 +140,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Dale kliknu na "Advanced settings"
 - Muzu nastavit quoty pro konkretni uzivatele
 
-## Jak pripipravit a pripojit virtualni tiskarny
+## Jak pripravit a pripojit virtualni tiskarny
 ### SRV22 nastaveni
 - Add roles and features a 3x next
 - Ve vyberu vyberu polozku "Print And Document Services" pak vsude next a install
