@@ -176,3 +176,39 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Vybereme "Use an existing printer driver on this computer"
 - Vypneme "Share this printer"
 - Klikneme na puvodni T -> Properties -> Ports - vybereme moznost "Enable printer pooling" a vybereme port s nasi pomocnou T
+### Jak nasimulovat tiskarnu, ktera bude uprednostnovat dane uzivatele/skupinu
+- Vytvorime novou T (viz. nahore)
+#### Zmeny v nastaveni T
+- Nazev vybereme stejny, zvolime akorat priponu "Tiskarna Pro Vsechny **Uprednostneni**"
+- Dame takovou T na stejny port, jako nase predchozi T (Tiskarna Pro Vsechny)
+- Vybereme "Use an existing printer driver on this computer"
+- Vypneme "Share this printer"
+- Next -> Next -> Finish
+#### Security settings
+- Pravym na T -> Properties -> Security
+- **Odstranime everyone**
+- **Vysledek:** Tiskarna dotiskne stavajici dokument a hned jako nasledujici bude tisknout dokument, ktery zadal Administrator
+### Jak nasimulovat T, ktera je vyhrazena pro konkretni skupinu
+- Vytvorime skupinu na SRV22-DC (dale jen G)
+- Vytvorime si 2 ucty (d1, d2) - d2 zaradime do G
+- Vytvorime novou T (viz. nahore)
+#### Zmeny v nastaveni T
+- Zapneme "Share this printer"
+- Next -> Next -> Finish
+#### Nastaveni properties teto T
+##### Sharing
+- List in the directory - ON 
+##### Security
+- Odebrat everyone
+- Pridat G - staci jen Print
+#### Nastaveni GPM (SRV22-DC)
+- Vytvorime group policy object - napr. "Tiskarna pro Dispatchery"
+- Kliknu pravym na Organizational Unit nasi G a dam "Link an Existing GPO..." a vyberu nas group policy object "Tiskarna pro Dispatchery"
+- gpupdate /force
+#### Prejdeme zpet na SRV22 (nastaveni tiskaren)
+- Kliknu pravym na nasi T -> Deploy with group policy
+- Klikneme na "Browse" - pokud vyskocila chyba - prihlasime se jako domenovy administrator
+- Vybereme politiku pro nasi G
+- Zaklikneme "The users that this GPO applies to" a "The computers that this GPO applies to"
+- ADD -> OK
+- Otestujeme prihlasenim se za usera - pripadne budeme muset tuto tiskarnu vyhledat
