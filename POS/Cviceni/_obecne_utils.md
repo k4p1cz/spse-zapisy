@@ -64,6 +64,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - V profile path by melo by: **\\<nazev_serveru>\<nazev_slozky>\%username%**
 
 ## Jak nastavit spolecny adresar (sklad)
+### 1. Metoda
 ### 1. Prejdeme na Srv19 nebo jiny pomocny server 
 - Na disku C: vytvorime adresar **"Sklad" a nasdilime ho**
 - Pri nastavovani permisi nechame **Everyone - full control**
@@ -74,6 +75,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 ### 3. Upraveni slozky s userama
 - Oznacime vsechny usery a otevreme properties
 - Prejdeme do karty **Profile** a do logon scripts napiseme nazev naseho scriptu
+### 2. Metoda
 
 ## Jak vytvorit mandatory uzivatele
 ### 1. Vytvorit roaming uzivatele
@@ -137,3 +139,32 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Rozkliknu zalozku "Quota" a zapnu prvni 2 checkboxy
 - Dale kliknu na "Advanced settings"
 - Muzu nastavit quoty pro konkretni uzivatele
+
+## Jak pripipravit a pripojit virtualni tiskarny
+### SRV22 nastaveni
+- Add roles and features a 3x next
+- Ve vyberu vyberu polozku "Print And Document Services" pak vsude next a install
+- V toolsech otevru "Print management"
+- Prejdeme do Print servers->Srv22->Printers - pravym kliknneme a vybereme "Add printer"
+- Vybereme 3. moznost "Add a new printer using an existing port" - na portu nezalezi -> NEXT
+- Kdyz nemame zadnou tiskarnu nainstalovanou tak vybereme "Install a new driver"
+- Vybereme jakykoliv driver v nasem pripade (simulujeme tiskarnu)
+- Nejak rozumne tiskarnu pojmenujeme - melo by to bez problemu zvladnout nazev s mezerama
+- Stejny popisek nastavim do "Share Name" - likace a comment je nepovinny, ale doporucuji zadavat
+- **Mame vytvorenou tiskarnu**
+- Otevru si properties nasi nove tiskarny (dale jen "T")
+- Zelene kolecko u ikonky T znamena, ze je to defaultni tiskarna pro nas server
+- V karte "Serurity" muzeme rict, kdo s T muze pracovat a co s ni muze delat
+### Jak nastavit uzivateli pristup k tiskarne
+- Otevreme si "Devices and Printers" a muzeme se pokusit ji vyhledat, ale nic nam ji nenajde
+- Pokud chceme T najit hned - musime prejit na SRV22 do properties T, do karty sharing a zakliknout moznost "List..." - NEMUSI FUNGOVAT - zalezi na nahode xd
+### Jak docilit, aby uzivatel nemusel rucne hledat tiskarnu, ale byla tam "by default"
+- Prejdeme na DC a prejdeme do "Group policy management"
+- Forest->Domains->dom22.local - pravym klikneme na dom22.local a dame "Create a GPO in this..." -> Nastavime nazev napr. "Tiskarna Pro Vsechny"
+- Prejdeme do Forest->Domains->dom22.local->Group Policy Object -> <nazev_vyrvoreneho_objectu> - pravym na nej kliknu a dam "EDIT"
+- Prejdeme do -> User Configuration -> Preferences -> Control Panel Setting -> Printers
+- Pravym klikneme a vyberem "New shared printer"
+- Action = Create, Share path - klikneme na "..." a najdeme nasi tiskarnu
+- "set this printer as the default printer" nemusi 100% fungovat - windows xd
+- **OKAY** a muzeme zavrit editor naseho objectu
+- Pouzijeme gpupdate /force pro obnoveni domenovych politik
