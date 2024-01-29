@@ -36,7 +36,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 ## Jak nastavit domovsky adresar pro kazdeho uzivatele
 ### 1. Sdileni
 - **Share name**: <nazev_slozky>**$**
-- Nastavit opravneni pro **Authenticated Users**, aby mohli psat a cist. A odstranit **Everyone**, ulozit  cesku \\<nazev_pc>\<nazev_slozky>
+- Nastavit opravneni pro **Authenticated Users**, aby mohli psat a cist. A odstranit **Everyone**, ulozit  cestu \\<nazev_pc>\<nazev_slozky>
 ### 2. Nastaveni prav
 - V security jit do **advanced security settings**. Disable inheritance a smazat **Users (Read and Execute)**.
 ### 3. SRV22-DC
@@ -141,6 +141,12 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Muzu nastavit quoty pro konkretni uzivatele
 
 ## Jak pripravit a pripojit virtualni tiskarny
+#### [SRV22 Nastaveni](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#srv22-nastaveni)
+#### [Jak nastavit uzivateli pristup k tiskarne](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-uzivateli-pristup-k-tiskarne)
+#### [Jak docilit, aby uzivatel nemusel rucne hledat tiskarnu, ale aby tam byla "by default"](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-uzivateli-pristup-k-tiskarne)
+#### [Jak nasimulovat koupeni 2. stejne tiskarny, aby pomohla nasi predchozi tiskarne](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nasimulovat-koupeni-2-stejne-tiskarny-aby-pomohla-nasi-predchozi-t)
+#### [Jak nasimulovat tiskarnu, ktera bude uprednostnovat dane uzivatele/skupinu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nasimulovat-tiskarnu-ktera-bude-uprednostnovat-dane-uzivateleskupinu)
+#### [Jak nasimulovat tiskarnu, ktera je vyhrazena pro konkretni skupinu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nasimulovat-t-ktera-je-vyhrazena-pro-konkretni-skupinu)
 ### SRV22 nastaveni
 - Add roles and features a 3x next
 - Ve vyberu vyberu polozku "Print And Document Services" pak vsude next a install
@@ -201,6 +207,8 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 ##### Security
 - Odebrat everyone
 - Pridat G - staci jen Print
+##### Advanced
+- Zmenit priority na 99
 #### Nastaveni GPM (SRV22-DC)
 - Vytvorime group policy object - napr. "Tiskarna pro Dispatchery"
 - Kliknu pravym na Organizational Unit nasi G a dam "Link an Existing GPO..." a vyberu nas group policy object "Tiskarna pro Dispatchery"
