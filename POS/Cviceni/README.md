@@ -11,4 +11,4 @@
 #### [Jak vytvorit skupinovy mandatory profil](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-skupinu-a-pridat-do-ni-uzivatele)
 #### [Jak omezit velikost sitove slozky Sklad a Home](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-omezit-velikost-sitove-slozky-sklad-a-home)
 #### [Jak nastavit disk quotu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/obecne_utils.md#jak-nastavit-disk-quotu)
-#### [Jak pripipravit a pripojit virtualni tiskarny](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-pripipravit-a-pripojit-virtualni-tiskarny)
+#### [Jak pripravit a pripojit virtualni tiskarny](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-pripravit-a-pripojit-virtualni-tiskarny)
