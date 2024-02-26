@@ -98,7 +98,7 @@
 
 #### Jak nastavit pristup na sdileny sklad (S:/)
 - [Navod na sklad](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-spolecny-adresar-sklad)
-- - Na SRV22 v server manageru si otevreme tools-> IIS manager
+- Na SRV22 v server manageru si otevreme tools-> IIS manager
 - Prejdu na "SRV22/Sites/Default Web Site/vedeni"
 - Pravym tlacitkem kliknu na "Default Web Site"
 - Kliknu na "Add virtual directory"
