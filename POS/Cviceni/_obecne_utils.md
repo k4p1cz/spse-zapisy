@@ -64,7 +64,6 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - V profile path by melo by: **\\<nazev_serveru>\<nazev_slozky>\%username%**
 
 ## Jak nastavit spolecny adresar (sklad)
-### 1. Metoda
 ### 1. Prejdeme na Srv19 nebo jiny pomocny server 
 - Na disku C: vytvorime adresar **"Sklad" a nasdilime ho**
 - Pri nastavovani permisi nechame **Everyone - full control**
@@ -75,7 +74,6 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 ### 3. Upraveni slozky s userama
 - Oznacime vsechny usery a otevreme properties
 - Prejdeme do karty **Profile** a do logon scripts napiseme nazev naseho scriptu
-### 2. Metoda
 
 ## Jak vytvorit mandatory uzivatele
 ### 1. Vytvorit roaming uzivatele
@@ -229,3 +227,9 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Zaklikneme "The users that this GPO applies to" a "The computers that this GPO applies to"
 - ADD -> OK
 - Otestujeme prihlasenim se za usera - pripadne budeme muset tuto tiskarnu vyhledat
+
+### Jak nastavit Web Server
+- Na SRV22 si otevreme "add roles and features"
+- Pridame si featurku "Web Server" pak 2x next a vybereme "URL Auth" a "Basic auth"
+- 
+

@@ -12,3 +12,4 @@
 #### [Jak omezit velikost sitove slozky Sklad a Home](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-omezit-velikost-sitove-slozky-sklad-a-home)
 #### [Jak nastavit disk quotu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/obecne_utils.md#jak-nastavit-disk-quotu)
 #### [Jak pripravit a pripojit virtualni tiskarny](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-pripravit-a-pripojit-virtualni-tiskarny)
+#### [Jak nastavit Web Server](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-web-server)
