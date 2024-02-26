@@ -242,3 +242,5 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Do prvniho pole zadam "www" a vyberu stroj, na kterem bezi WS
 - Do CMD zadame prikaz na aktualizace DNS zaznamu
 
+#### Jak zmenit hl. stranku
+- Prejdeme na SRV22, otevreme pruzkumnika a otevreme adresu "C:/inetpub"
