@@ -228,3 +228,11 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Zaklikneme "The users that this GPO applies to" a "The computers that this GPO applies to"
 - ADD -> OK
 - Otestujeme prihlasenim se za usera - pripadne budeme muset tuto tiskarnu vyhledat
+
+
+### Jak linkovat spolecny disk (S:) pomoci domenove politiky
+- Otevru si SRV22-DC a prejdu do nastaveni domenovych politik
+- Prejdeme do User Configuration -> Preferences -> Windows Settings -> Drive maps
+- Kliknu pravym do volneho mista a dam "New -> Mapped drive"
+- Vyberu lokaci, do ktere dam URL sdileneho adresare z SRV22, Action = "Create", Drive letter vyberu jakekoliv
+- Ok a mam hotovo
