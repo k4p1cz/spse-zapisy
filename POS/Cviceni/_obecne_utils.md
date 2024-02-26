@@ -235,6 +235,10 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Pridame si featurku "Web Server" pak 2x next a vybereme "URL Auth" a "Basic auth"
 - Na uzivatelskem pocitaci, prihlasen za uzivatele, si otevrene prohlizec a zadame IP adresu SRV22 -> Meli bychom videt defaultni stranku
 
+####Obsah
+**[Jak zmenit URL](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-zmenit-url)**
+**[Jak zmenit hlavni stranku](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-zmenit-hl-stranku)**
+
 #### Jak zmenit URL
 - Prejdeme na SRV22-DC - v toolsech kliknu na "DNS"
 - Prejdeme na "forward lookup zone"
@@ -292,3 +296,8 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Prejdu na "SRV22/Sites/Default Web Site/info"
 - Otevru "Directory Browsing" (ikonka)
 - V pravem menu dam "Enable" - muzu upravovat, co uzivatel muze videt
+
+#### Jak nastavit pristup, az po zadani hesla
+- Prejdeme na SRV22, otevreme pruzkumnika a otevreme adresu "C:/inetpub/wwwroot/"
+- Vytvorime slozku /news a soubor index.html - do tohoto adresare budou moci vsichni az potom, co zadaji heslo
+- 
