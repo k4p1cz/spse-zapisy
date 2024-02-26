@@ -65,6 +65,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - V profile path by melo by: **\\<nazev_serveru>\<nazev_slozky>\%username%**
 
 ## Jak nastavit spolecny adresar (sklad)
+- Novy navod [zde](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-linkovat-spolecny-disk-s-pomoci-domenove-politiky)
 ### 1. Prejdeme na Srv19 nebo jiny pomocny server 
 - Na disku C: vytvorime adresar **"Sklad" a nasdilime ho**
 - Pri nastavovani permisi nechame **Everyone - full control**
@@ -230,7 +231,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Otestujeme prihlasenim se za usera - pripadne budeme muset tuto tiskarnu vyhledat
 
 
-### Jak linkovat spolecny disk (S:) pomoci domenove politiky
+## Jak linkovat spolecny disk (S:) pomoci domenove politiky
 - Otevru si SRV22-DC a prejdu do nastaveni domenovych politik
 - Prejdeme do User Configuration -> Preferences -> Windows Settings -> Drive maps
 - Kliknu pravym do volneho mista a dam "New -> Mapped drive"
