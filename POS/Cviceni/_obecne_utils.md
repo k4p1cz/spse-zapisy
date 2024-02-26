@@ -19,8 +19,8 @@
 
 
 ## Commands
-**gpupdate /force** - resetovani policies
-**ipconfig /flushdns** - vymazani DNS cache (refresh DNS zaznamu)
+- **gpupdate /force** - resetovani policies
+- **ipconfig /flushdns** - vymazani DNS cache (refresh DNS zaznamu)
 
 ## Zmirneni naroku na heslo
 - Na Srv22-DC si otevreme Server Manager a prejdeme do **Tools->Group Policy Management**
