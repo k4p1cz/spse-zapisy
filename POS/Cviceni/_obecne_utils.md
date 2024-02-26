@@ -235,12 +235,12 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Pridame si featurku "Web Server" pak 2x next a vybereme "URL Auth" a "Basic auth"
 - Na uzivatelskem pocitaci, prihlasen za uzivatele, si otevrene prohlizec a zadame IP adresu SRV22 -> Meli bychom videt defaultni stranku
 
-####Obsah
-**[Jak zmenit URL](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-zmenit-url)**
-**[Jak zmenit hlavni stranku](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-zmenit-hl-stranku)**
-**[Jak vytvorit podstranku (www.dom22.local/test)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-dalsi-podstranku-napr-wwwdom22localtest)**
-**[Jak nastavit povoleni browsovat dalsimi podstrankami (www.dom22.local/info)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-povoleni-browsovat-dalsimi-podstrankami-wwwdom22localinfo)**
-**[Jak nastavit pristup az po zadani hesla (www.dom22.local/news)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-pristup-az-po-zadani-hesla)**
+#### Obsah
+-**[Jak zmenit URL](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-zmenit-url)**
+-**[Jak zmenit hlavni stranku](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-zmenit-hl-stranku)**
+-**[Jak vytvorit podstranku (www.dom22.local/test)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-dalsi-podstranku-napr-wwwdom22localtest)**
+-**[Jak nastavit povoleni browsovat dalsimi podstrankami (www.dom22.local/info)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-povoleni-browsovat-dalsimi-podstrankami-wwwdom22localinfo)**
+-**[Jak nastavit pristup az po zadani hesla (www.dom22.local/news)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-pristup-az-po-zadani-hesla)**
 
 
 #### Jak zmenit URL
