@@ -243,4 +243,38 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Do CMD zadame prikaz na aktualizace DNS zaznamu
 
 #### Jak zmenit hl. stranku
-- Prejdeme na SRV22, otevreme pruzkumnika a otevreme adresu "C:/inetpub"
+- Prejdeme na SRV22, otevreme pruzkumnika a otevreme adresu "C:/inetpub/wwwroot/"
+- Vytvorime soubor index.html a muzeme vytvaret nas web
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NADPIS</title>
+    <style type="text/css">
+	:root{
+             --font: Roboto, sans-serif;
+	}
+	*{
+    	     margin: 0;
+    	     padding: 0;
+    	     box-sizing: border-box;
+	}
+	p,h5,h4,h3,h2,h1,a,li,input,textarea{
+    	     font-family: var(--font);
+	}
+	main{
+	     width: 100vw;
+	     height: 100vh;
+	     padding: 1rem;
+	}
+    </style>
+</head>
+<body>
+    <main>
+    <main>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</html>
+```
