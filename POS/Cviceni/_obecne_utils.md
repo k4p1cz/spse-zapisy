@@ -238,6 +238,10 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 ####Obsah
 **[Jak zmenit URL](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-zmenit-url)**
 **[Jak zmenit hlavni stranku](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-zmenit-hl-stranku)**
+**[Jak vytvorit podstranku (www.dom22.local/test)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-vytvorit-dalsi-podstranku-napr-wwwdom22localtest)**
+**[Jak nastavit povoleni browsovat dalsimi podstrankami (www.dom22.local/info)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-povoleni-browsovat-dalsimi-podstrankami-wwwdom22localinfo)**
+**[Jak nastavit pristup az po zadani hesla (www.dom22.local/news)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-pristup-az-po-zadani-hesla)**
+
 
 #### Jak zmenit URL
 - Prejdeme na SRV22-DC - v toolsech kliknu na "DNS"
@@ -300,4 +304,7 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 #### Jak nastavit pristup, az po zadani hesla
 - Prejdeme na SRV22, otevreme pruzkumnika a otevreme adresu "C:/inetpub/wwwroot/"
 - Vytvorime slozku /news a soubor index.html - do tohoto adresare budou moci vsichni az potom, co zadaji heslo
-- 
+- Na SRV22 v server manageru si otevreme tools-> IIS manager
+- Prejdu na "SRV22/Sites/Default Web Site/news"
+- Otevru "Authentication" (ikonka)
+- "Anonymous auth" zmenim na disabled a "basic auth" zmenim na enabled
