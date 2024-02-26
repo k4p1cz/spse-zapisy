@@ -20,6 +20,7 @@
 
 ## Commands
 **gpupdate /force** - resetovani policies
+**ipconfig /flushdns** - vymazani DNS cache (refresh DNS zaznamu)
 
 ## Zmirneni naroku na heslo
 - Na Srv22-DC si otevreme Server Manager a prejdeme do **Tools->Group Policy Management**
@@ -229,7 +230,15 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 - Otestujeme prihlasenim se za usera - pripadne budeme muset tuto tiskarnu vyhledat
 
 ### Jak nastavit Web Server
+- "Web server" - dale jen "WS"
 - Na SRV22 si otevreme "add roles and features"
 - Pridame si featurku "Web Server" pak 2x next a vybereme "URL Auth" a "Basic auth"
-- 
+- Na uzivatelskem pocitaci, prihlasen za uzivatele, si otevrene prohlizec a zadame IP adresu SRV22 -> Meli bychom videt defaultni stranku
+
+#### Jak zmenit URL
+- Prejdeme na SRV22-DC - v toolsech kliknu na "DNS"
+- Prejdeme na "forward lookup zone"
+- Klikneme pravym do volneho mista a dame "Create alias (CNAME)"
+- Do prvniho pole zadam "www" a vyberu stroj, na kterem bezi WS
+- Do CMD zadame prikaz na aktualizace DNS zaznamu
 
