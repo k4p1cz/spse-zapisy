@@ -11,6 +11,9 @@
 3. **[Jak vytvorit podstranku (www.dom22.local/test)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/ws.md#jak-vytvorit-dalsi-podstranku-napr-wwwdom22localtest)**
 4. **[Jak nastavit povoleni browsovat dalsimi podstrankami (www.dom22.local/info)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/ws.md#jak-nastavit-povoleni-browsovat-dalsimi-podstrankami-wwwdom22localinfo)**
 5. **[Jak nastavit pristup az po zadani hesla (www.dom22.local/news)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/ws.md#jak-nastavit-pristup-az-po-zadani-hesla)**
+6. **[Jak nastavit pristup na sdileny disk S (www.dom22.local/skladka)](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/ws.md#jak-nastavit-pristup-na-sdileny-sklad-s)**
+
+
 
 
 #### Jak zmenit URL
