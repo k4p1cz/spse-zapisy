@@ -92,3 +92,6 @@
 - Vybereme "Specified users" a zadame do pole nazev uzivatele ("v1")
 - Otevru "Directory Browsing" (ikonka)
 - V pravem menu dam "Enable" - muzu upravovat, co uzivatel muze videt
+
+#### Jak nastavit pristup na sdileny sklad (S:/)
+- [Navod na sklad](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-nastavit-spolecny-adresar-sklad)
