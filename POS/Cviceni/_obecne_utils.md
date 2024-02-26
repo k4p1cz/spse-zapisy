@@ -273,8 +273,22 @@ WIN + PAUSE -> Advanced system settings -> User Profiles (settings)
 </head>
 <body>
     <main>
+	<h1>Welcome!</h1>
     <main>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </html>
 ```
+
+#### Jak vytvorit dalsi podstranku (napr. www.dom22.local/test)
+- Prejdeme na SRV22, otevreme pruzkumnika a otevreme adresu "C:/inetpub/wwwroot/"
+- Vytvorime slozku /test a do teto slozky vytvorime soubor "index.html"
+- Upravime html soubor a otestujeme
+
+#### Jak nastavit povoleni browsovat dalsimi podstrankami (www.dom22.local/info)
+- Prejdeme na SRV22, otevreme pruzkumnika a otevreme adresu "C:/inetpub/wwwroot/"
+- Vytvorime slozku /info a do teto slozky muzeme vlozit soubory
+- Na SRV22 v server manageru si otevreme tools-> IIS manager
+- Prejdu na "SRV22/Sites/Default Web Site/info"
+- Otevru "Directory Browsing" (ikonka)
+- V pravem menu dam "Enable" - muzu upravovat, co uzivatel muze videt
