@@ -1,4 +1,4 @@
-#WEB SERVER
+# WEB SERVER
 ## Jak nastavit Web Server
 - "Web server" - dale jen "WS"
 - Na SRV22 si otevreme "add roles and features"
@@ -92,5 +92,3 @@
 - Vybereme "Specified users" a zadame do pole nazev uzivatele ("v1")
 - Otevru "Directory Browsing" (ikonka)
 - V pravem menu dam "Enable" - muzu upravovat, co uzivatel muze videt
-
-#### 
