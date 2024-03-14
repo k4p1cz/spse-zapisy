@@ -13,3 +13,4 @@
 #### [Jak nastavit disk quotu](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/obecne_utils.md#jak-nastavit-disk-quotu)
 #### [Jak pripravit a pripojit virtualni tiskarny](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/_obecne_utils.md#jak-pripravit-a-pripojit-virtualni-tiskarny)
 #### [WEB SERVER](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/ws.md)
+#### [DHCP](https://github.com/k4p1cz/spse-zapisy/blob/main/POS/Cviceni/dhcp.md)
