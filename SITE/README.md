@@ -32,3 +32,8 @@ network <IP site> <Wildcard maska> area 0
 - Wildcard maska ma opacne usporadani 1 a 0 oproti masce site
 	- Maska site: 255.255.255.0
 	- Wildcard maska: 0.0.0.255
+```
+router ospf 1
+network 10.40.1.0 0.0.0.255 area 0
+```
+- OSPF nastavujeme vzdy na sit, kterou router zna
